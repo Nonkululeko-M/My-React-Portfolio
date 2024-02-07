@@ -45,6 +45,17 @@
   list-style: none;
   font-size: 1.5rem;
 }
+.Navbar {
+  position: fixed; /* Set the navigation bar to be fixed */
+  top: 0; /* Position it at the top of the viewport */
+  width: 100%; /* Make it span the entire width of the viewport */
+  z-index: 1000; /* Ensure it appears above other content */
+}
+
+/* Adjustments to account for the fixed position */
+.section {
+  padding-top: 17vh; /* Add padding to the top of sections to prevent content from being obscured by the fixed navigation bar */
+}
 
 a {
   color: black;
@@ -284,4 +295,15 @@ a:hover {
   display: flex;
   justify-content: center; /* Align arrows in the center horizontally */
   align-items: center; /* Align arrows in the center vertically */
+}
+.Navbar {
+  position: fixed; /* Set the navigation bar to be fixed */
+  top: 0; /* Position it at the top of the viewport */
+  width: 100%; /* Make it span the entire width of the viewport */
+  z-index: 1000; /* Ensure it appears above other content */
+}
+
+/* Adjustments to account for the fixed position */
+.section {
+  padding-top: 17vh; /* Add padding to the top of sections to prevent content from being obscured by the fixed navigation bar */
 }
