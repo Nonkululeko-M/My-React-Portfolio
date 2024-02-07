@@ -1,3 +1,63 @@
 *{
-  background-color:blueviolet
+  background-color:aqua;
+}
+.Navbar {
+  background-color: #333;
+  padding: 10px;
+}
+
+.nav-links {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav-item {
+  display: inline;
+  margin: 0 10px;
+}
+
+.nav-link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+}
+.Navbar,
+.nav-links {
+  display: flex;
+  
+}
+
+.Navbar {
+  justify-content: space-around;
+  align-items: center;
+  height: 17vh;
+  
+  
+}
+.Navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+.nav-links {
+  gap: 2rem;
+  list-style: none;
+  font-size: 1.5rem;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  text-decoration-color:rgb(224, 4,4);
+}
+
+a:hover {
+  color: grey;
+  text-decoration: underline;
+  text-underline-offset: 1rem;
+  text-decoration-color: rgb(9, 238, 47);
 }
