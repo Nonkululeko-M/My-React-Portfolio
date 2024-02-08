@@ -1,5 +1,7 @@
 import React from 'react';
-import images from './components/images';
+import Iimages from '../images/IMG_7145.jpg'
+import Linkin from '../images/25231.png'
+import Giticon from '../images/174857.png'
 
 const Home = () => {
   const handleDownloadCV = () => {
@@ -21,7 +23,7 @@ const Home = () => {
   return (
     <div className="home" id="home">
       <div className="section__pic-container">
-        <img src="./images" alt="MY profile picture" />
+        <img src={Iimages} alt="MY profile picture" />
       </div>  
       <div className="section__text">
         <p className="section__text__p1">Hello, I'm</p>
@@ -37,19 +39,20 @@ const Home = () => {
         </div>
         <div id="socials-container">
           <img
-            src="/pictures/linkedin-icon.png"
+            src={Giticon}
             alt="My LinkedIn profile"
             className="icon"
             onClick={handleLinkedInClick}
           />
           <img
-            src="./pictures/git-icon.png"
+            src={Linkin}
             alt="My Github profile"
             className="icon"
             onClick={handleGithubClick}
           />
         </div>
       </div>
+      
     </div>
   );
 };
