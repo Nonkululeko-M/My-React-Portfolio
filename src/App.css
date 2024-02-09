@@ -1,21 +1,13 @@
 *{
   background-color:aqua;
 }
-
-
 .nav-links {
   list-style-type: none;
   margin: 0;
-  padding: 0;
+
   display: flex;
   justify-content: space-around;
 }
-
-.nav-item {
-  display: inline;
-  margin: 0 10px;
-}
-
 .nav-link {
   color: #fff;
   text-decoration: none;
@@ -27,29 +19,8 @@
   
 }
 
-.Navbar {
-  justify-content: space-around;
-  align-items: center;
-  height: 17vh;
-  
-  
-}
-.Navbar {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-}
 .nav-links {
-  gap: 2rem;
-  list-style: none;
   font-size: 1.5rem;
-}
-.Navbar {
-  position: fixed; /* Set the navigation bar to be fixed */
-  top: 0; /* Position it at the top of the viewport */
-  width: 100%; /* Make it span the entire width of the viewport */
-  z-index: 1000; /* Ensure it appears above other content */
 }
 
 /* Adjustments to account for the fixed position */
@@ -68,9 +39,6 @@ a:hover {
   text-decoration: underline;
   text-underline-offset: 1rem;
   text-decoration-color: rgb(9, 238, 47);
-}
-* {
-  background-color: aqua;
 }
 
 .section {
@@ -193,20 +161,156 @@ a:hover {
   gap: 1rem;
 }
 
-/*arrowup*/
-.icon.arrow-container {
-  display: flex;
-  justify-content: center; /* Align arrows in the center horizontally */
-  align-items: center; /* Align arrows in the center vertically */
+/* Adjustments to account for the fixed position */
+
+nav.navbar .navbar-nav .nav-link.navbar-link {
+  font-weight: 400;
+  color: #fff !important;
+  letter-spacing: 0.8px;
+  padding: 0 25px;
+  font-size: 18px;
+  opacity: 0.75;
 }
-.Navbar {
-  position: fixed; /* Set the navigation bar to be fixed */
-  top: 0; /* Position it at the top of the viewport */
-  width: 100%; /* Make it span the entire width of the viewport */
-  z-index: 1000; /* Ensure it appears above other content */
+.navbar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 50%;
+  padding: 10px 20px; /* Adjust padding as needed */
 }
 
-/* Adjustments to account for the fixed position */
-.section {
-  padding-top: 17vh; /* Add padding to the top of sections to prevent content from being obscured by the fixed navigation bar */
+.nav-links {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
+/*image section*/
+.home {
+  display: flex;
+  /*justify-content: center; /* Horizontally center the content */
+  align-items: center; /* Vertically center the content */
+  height: 100vh; /* Set the height of the container to 100% of the viewport height */
+}
+
+.section__pic-container img {
+  max-width: 100%; /* Ensure the image does not exceed the container width */
+  max-height: 100%; /* Ensure the image does not exceed the container height */
+  display: block; /* Ensure the image is displayed as a block element */
+  margin: auto; /* Center the image horizontally */
+}
+/*Section container*/
+.section__text {
+  right: 0;
+}
+.section__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Vertically center the content */
+  
+  height: 100vh; /* Set the height of the container to 100% of the viewport height */
+  padding-left: 200px; /* Add left padding for spacing */
+}
+.section__text__p1 {
+  margin: 0; /* Remove default margin */
+}
+.title {
+  margin: 0; /* Remove default margin */
+}
+.section__text__p2 {
+  margin: 0; /* Remove default margin */
+}
+.btn-container {
+  margin-top: 20px; /* Adjust top margin as needed */
+}
+#socials-container {
+  display:flex;
+  flex-direction: column; /* Display items in a vertical line */
+  align-items: flex-end; /* Align items horizontally in the center */
+  right: 0;
+}
+
+.icon {
+  margin-bottom: 10px; /* Adjust vertical spacing between icons */
+}
+
+#socials-container {
+  display: flex;
+  flex-direction: column; /* Display items in a vertical line */
+  align-items: flex-end; /* Align items to the right */
+  position: absolute; /* Position the container absolutely */
+  top: 50%; /* Position it vertically at the middle of the parent container */
+  transform: translateY(-50%); /* Adjust to center vertically */
+  right: 0; /* Align to the right */
+}
+
+.icon {
+  margin-bottom: 10px; /* Adjust vertical spacing between icons */
+}
+/*about section*/
+#about {
+  padding: 50px 0;
+}
+
+.section__text__p1 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.title {
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+
+.section-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section__pic-container {
+  margin-right: 50px;
+}
+
+.about-pic {
+  width: 300px; /* Adjust the width as needed */
+  height: 300px; /* Adjust the height as needed */
+  border-radius: 50%; /* Make it circular */
+}
+
+.about-details-container {
+  max-width: 600px; /* Adjust the max-width as needed */
+}
+
+.details-container {
+  margin-bottom: 20px;
+}
+
+.icon {
+  width: 50px; /* Adjust the width as needed */
+  height: 50px; /* Adjust the height as needed */
+  margin-right: 10px;
+}
+
+.text-container {
+  line-height: 1.6;
+}
+
+.text-container p {
+  font-size: 16px;
+}
+.section__pic-container {
+  width: 38rem;
+}
+
+.about-pic {
+  width: 100%;
+  border-radius: 2rem;
+  box-shadow: 0 0 2rem black;
+  transition: 600ms;
+}
+.details-container {
+  margin-bottom: 20px;
+}
+
+
