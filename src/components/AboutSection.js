@@ -1,6 +1,6 @@
 import React from 'react';
 
-function about() {
+const AboutSection = () => {
   return (
     <section id="about">
       <p className="section__text__p1">Get To Know More</p>
@@ -12,7 +12,7 @@ function about() {
             alt="Profile picture"
             className="about-pic"
           />
-        </div>
+        </div>s
         <div className="about-details-container">
           <div className="about-containers">
             <div className="details-container">
@@ -41,13 +41,12 @@ function about() {
               I'm a recent graduate with a National Diploma in Information Technology, specializing in Communication Networks. My journey into software development started as a General Assistant, where I honed my customer service skills and transitioned into the dynamic world of coding through a Software Development Program with CapaCiti.
 
               I bring a unique blend of technical proficiency and a knack for problem-solving. Whether it's crafting clean code, collaborating with cross-functional teams, or diving into the latest tech trends, I'm eager to contribute to innovative projects. Let's connect and explore how my skills and passion can add value to your team!"
-  
-              </p>
+            </p>
           </div>
         </div>
       </div>
     </section>
   );
-}
+};
 
-export default about;
+export default AboutSection;
