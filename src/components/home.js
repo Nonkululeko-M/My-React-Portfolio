@@ -22,6 +22,7 @@ const Home = () => {
 
   return (
     <div className="home" id="home">
+    
       <div className="section__pic-container">
         <img src={Iimages} alt="MY profile picture" />
       </div>  

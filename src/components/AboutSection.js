@@ -1,4 +1,5 @@
 import React from 'react';
+import myPicture from '../images/IMG_7145.jpg'
 
 const AboutSection = () => {
   return (
@@ -8,12 +9,13 @@ const AboutSection = () => {
       <div className="section-container">
         <div className="section__pic-container">
           <img
-            src="/pictures/IMG_7145.new.jpg"
+            src={myPicture}
             alt="Profile picture"
             className="about-pic"
           />
-        </div>s
-        <div className="about-details-container">
+        
+        </div>
+        <div className="about-details-container" style={{ textAlign: 'left' }}>
           <div className="about-containers">
             <div className="details-container">
               <img
@@ -22,7 +24,7 @@ const AboutSection = () => {
                 className="icon"
               />
               <h3>Experience</h3>
-              <p>2+ years <br />General Assistant</p>
+              <p style={{ marginBlock: '2.4rem' }}>2+ years <br />General Assistant</p>
             </div>
             <div className="details-container">
               <img
@@ -31,7 +33,7 @@ const AboutSection = () => {
                 className="icon"
               />
               <h3>Education</h3>
-              <p>National Diploma <br />Information Technology</p>
+              <p style={{ marginBlock: '2.4rem' }}>National Diploma <br />Information Technology</p>
             </div>
           </div>
           <div className="text-container">
