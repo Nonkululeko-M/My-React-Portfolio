@@ -2,6 +2,9 @@ import React from 'react';
 import JavaImage from '../images/java (1).png'
 import pythonImage from '../images/python.png'
 import ReactImage from '../images/react.png';
+import figmaImage from '../images/figma.png'
+import JSimage from '../images/javascript.png'
+import cssImage from '../images/css-3.png'
 
 const Skills = () => {
   return (
@@ -18,7 +21,7 @@ const Skills = () => {
               
             </div>
             <div className="card">
-              <img src="./assets/images/css.png" alt="CSS Icon" />
+              <img src={cssImage} alt="CSS Icon" />
               <h3>CSS</h3>
               
             </div>
@@ -27,15 +30,15 @@ const Skills = () => {
               <h3>React</h3>
             </div>
             <div className="card">
-              <img src="./assets/images/js.png" alt="Java Icon" />
-              <h3>Java</h3>
+              <img src= {figmaImage} alt="Figma Icon" />
+              <h3>Figma</h3>
             </div>
             <div className="card">
               <img src={pythonImage} alt="Python Icon" />
               <h3>Python</h3>
             </div>
             <div className="card">
-              <img src="./assets/images/js.png" alt="JavaScript Icon" />
+              <img src={JSimage} alt="JavaScript Icon" />
               <h3>JavaScript</h3>
             </div>
           </div>
