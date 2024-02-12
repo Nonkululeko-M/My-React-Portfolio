@@ -1,61 +1,46 @@
 import React from 'react';
-import Iimages from '../images/IMG_7145.jpg'
-import Linkin from '../images/25231.png'
-import Giticon from '../images/174857.png'
+import myprofile from '../images/IMG_7145.jpg'
 
 const Home = () => {
-  const handleDownloadCV = () => {
-    window.open('./CV/Nonkululeko.pdf');
-  };
-
-  const handleContactInfo = () => {
-    window.location.href = './#contact';
-  };
-
-  const handleLinkedInClick = () => {
-    window.location.href = 'https://www.linkedin.com/in/nonkululeko-mzalwana-1a8248271/';
-  };
-
-  const handleGithubClick = () => {
-    window.location.href = 'https://github.com/Nonkululeko-M?tab=repositories';
-  };
-
   return (
-    <div className="home" id="home">
-    
-      <div className="section__pic-container">
-        <img src={Iimages} alt="MY profile picture" />
-      </div>  
-      <div className="section__text">
-        <p className="section__text__p1">Hello, I'm</p>
-        <h1 className="title">Nonkululeko Mzalwana</h1>
-        <p className="section__text__p2">Frontend Developer</p>
-        <div className="btn-container">
-          <button className="btn btn-color-2" onClick={handleDownloadCV}>
-            Download CV
-          </button>
-          <button className="btn btn-color-1" onClick={handleContactInfo}>
-            Contact Info
-          </button>
+    <section id="home">
+      <div className="wrapper">
+        <div className="col-a">
+          <header>
+            <h4> Hello 👋🏾</h4>
+            <h1>I'm Nonkululeko Mzalwana</h1>
+          </header>
+          <div className="content">
+            <p className="line typing">Software Developer</p>
+            <a className="button" href="#contact"> Contact ME </a>
+          </div>
         </div>
-        <div id="socials-container">
+
+        <div className="col-b">
           <img
-            src={Giticon}
-            alt="My LinkedIn profile"
-            className="icon"
-            onClick={handleLinkedInClick}
+            src={myprofile}
+            alt="Profile picture"
+            id="notebook-1"
           />
           <img
-            src={Linkin}
-            alt="My Github profile"
-            className="icon"
-            onClick={handleGithubClick}
+            src={myprofile}
+            alt="My Picture"
+            id="notebook-2"
+          />
+          <img
+            src={myprofile}
+            alt="My Profile picture"
+            id="notebook-2-white"
+          />
+          <img
+            src={myprofile}
+            alt="Imagem de estilhaços de vidro com os ícones de HTML5, CSS3 e JavaScript por cima."
+            id="vidro"
           />
         </div>
       </div>
-      
-    </div>
+    </section>
   );
-};
+}
 
 export default Home;

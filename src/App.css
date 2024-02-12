@@ -1062,7 +1062,7 @@ footer .social-links li:nth-child(4) svg path:nth-child(2) {
     grid-area: B;
   }
 
-  /*===== NAVEGATION ==================================*/
+  /* Nav Section*/
 
   /*Reset*/
   nav#navigation .wrapper * {
@@ -1242,7 +1242,7 @@ footer .social-links li:nth-child(4) svg path:nth-child(2) {
     fill: #00abf0;
   }
 
-  /*===== HOME ========================================*/
+  /* HOME Section*/
 
   #home {
     padding-top: var(--nav-height);
@@ -1294,7 +1294,7 @@ footer .social-links li:nth-child(4) svg path:nth-child(2) {
     }
   }
 
-  /*===== ABOUT =======================================*/
+  /* ABOUT Section*/
 
   #about .wrapper {
     grid-template-columns: 48rem 1fr;
@@ -1315,7 +1315,7 @@ footer .social-links li:nth-child(4) svg path:nth-child(2) {
     scale: 1.07;
   }
 
-  /*===== PROJECTS ====================================*/
+  /*Projects*/
 
   #projects {
     background-color: var(--secundary-color);
@@ -1336,7 +1336,7 @@ footer .social-links li:nth-child(4) svg path:nth-child(2) {
     height: 5rem;
   }
 
-  /*===== KNOWLEDGE =====================================*/
+  /*Skills Section*/
 
   #knowledge h2 {
     width: 49.7rem;
@@ -1354,7 +1354,7 @@ footer .social-links li:nth-child(4) svg path:nth-child(2) {
     flex-grow: 1;
   }
 
-  /*===== CONTACT =====================================*/
+  /*Contact Section*/
 
   #contact .wrapper {
     grid-template-columns: 1fr 57.5rem;
@@ -1377,7 +1377,7 @@ footer .social-links li:nth-child(4) svg path:nth-child(2) {
     text-align: center;
   }
 
-  /*===== FOOTER ======================================*/
+  /*My Footer*/
 
   footer .wrapper {
     grid-template-columns: 1fr 1fr;
@@ -1402,7 +1402,7 @@ footer .social-links li:nth-child(4) svg path:nth-child(2) {
 }
 
 @media (max-width: 500px) {
-  /*===== GERAL ==================================*/
+  /*Main section*/
 
   section h4 {
     font-size: 1.2rem;
@@ -1427,14 +1427,14 @@ footer .social-links li:nth-child(4) svg path:nth-child(2) {
     font-size: 1.2rem;
   }
 
-  /*===== NAVEGATION ==================================*/
+  /*Navigation section*/
 
   nav#navigation button svg {
     width: 3rem;
     height: 3rem;
   }
 
-  /*===== MENU-EXPANDED ==================================*/
+  /* MENU*/
 
   body.menu-expanded .menu ul:nth-child(1) {
     font-size: 1.4rem;
@@ -1454,7 +1454,7 @@ footer .social-links li:nth-child(4) svg path:nth-child(2) {
     height: 2.3rem;
   }
 
-  /*===== HOME ==================================*/
+  /*HOME Section*/
 
   #home h1 {
     font-size: 3.8rem;
@@ -1477,13 +1477,13 @@ footer .social-links li:nth-child(4) svg path:nth-child(2) {
     bottom: -2rem;
   }
 
-  /*===== ABOUT ==================================*/
+  /*ABOUT Section*/
 
   #about .content a:nth-child(2) {
     font-size: 1.4rem;
   }
 
-  /*===== PROJECTS ==================================*/
+  /* PROJECTS Section*/
 
   #projects .card {
     padding: 2.5rem;
@@ -1503,7 +1503,7 @@ footer .social-links li:nth-child(4) svg path:nth-child(2) {
     height: 3rem;
   }
 
-  /*===== CONTACT ==================================*/
+  /*Section */
 
   #contact ul a {
     font-size: 1.3rem;
@@ -1529,13 +1529,13 @@ footer .social-links li:nth-child(4) svg path:nth-child(2) {
 }
 
 @media (max-width: 320px) {
-  /*===== GERAL ==================================*/
+  /*Main*/
 
   .wrapper {
     padding-inline: 2rem;
   }
 
-  /*===== HOME ==================================*/
+  /*HOME Section*/
 
   #home .wrapper::before {
     width: 20rem;
