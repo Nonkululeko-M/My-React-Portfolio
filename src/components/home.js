@@ -34,7 +34,7 @@ const Home = () => {
           />
           <img
             src={myprofile}
-            alt="Imagem de estilhaços de vidro com os ícones de HTML5, CSS3 e JavaScript por cima."
+            alt="my pic"
             id="vidro"
           />
         </div>
