@@ -4,7 +4,8 @@ import './App.css';
 import Navbar from './components/Navbar'; // Corrected component name and path
 import Home from './components/Home'; // Assuming you have a Home component
 import AboutSection from './components/AboutSection';
-import Skills from './components/skills'
+import Skills from './components/skills';
+import Project from './components/Project';
 
 
 
@@ -15,6 +16,7 @@ const App = () => {
       <Navbar /> {/* Corrected component name */}
       <AboutSection />
       <Skills />
+      <Project/>
      
     </div>
   );

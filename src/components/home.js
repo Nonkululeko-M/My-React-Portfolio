@@ -12,7 +12,8 @@ const Home = () => {
           </header>
           <div className="content">
             <p className="line typing">Software Developer</p>
-            <a className="button" href="#contact"> Contact ME </a>
+            <a className="button" href="/path/to/your/cv.pdf" download>Download CV</a>
+
           </div>
         </div>
 
