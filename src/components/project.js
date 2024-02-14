@@ -1,5 +1,5 @@
 import React from 'react';
-import myop from '../images/figma.svg'
+import myop from '../images/7162617.jpg'
 
 const Project = () => {
   return (

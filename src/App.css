@@ -623,7 +623,7 @@ body.light-mode #home img#notebook-2-white {
 
 /*===== PROJECTS ===============================================*/
 
-#projects {
+#projects, #testimonials{
   background-color: var(--secundary-color);
 }
 
@@ -635,19 +635,19 @@ body.light-mode #home img#notebook-2-white {
   margin-bottom: 1.6rem;
 }
 
-#projects header p {
+#projects header p, #testimonils header p {
   max-width: 60rem;
   margin: 0 auto 3rem;
   text-align: center;
 }
 
-#projects header p a {
+#projects header p a, #testimonails header p a {
   color: var(--paragraph);
   font-weight: bold;
   font-style: italic;
 }
 
-#projects header p + a {
+#projects header p + a, #testimonails p + a {
   padding: 0.8rem 2rem;
   color: var(--paragraph);
 
@@ -661,7 +661,7 @@ body.light-mode #home img#notebook-2-white {
   transition: 300ms;
 }
 
-#projects header a svg path:nth-child(2) {
+#projects header a svg path:nth-child(2), #testimonails header a svg path:nth-child(2) {
   fill: var(--headline);
 }
 
@@ -846,7 +846,7 @@ body.light-mode #home img#notebook-2-white {
   align-items: center;
 }
 
-#contact header {
+#Contact header {
   margin-bottom: 3.2rem;
 }
 
