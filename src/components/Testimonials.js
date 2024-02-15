@@ -1,5 +1,8 @@
 import React from 'react';
 import './Testimonials.css';
+import chumIM from '../images/chuma.jpeg';
+import Limg from '../images/langa.jpeg'
+
 const Testimonials = () => {
   return (
     <section id="Testimonials">
@@ -10,24 +13,29 @@ const Testimonials = () => {
           </header>
           <section className= "myslide">
           <div className="wrapperr">
+          
             <input type="radio" name="slide" id="c1" checked />
+
             <label htmlFor="c1" className="cardd">
               <div className="row">
-                <img src="IMG_7145.jpg" alt="Winter Image" />
+                
+                
                 <div className="icon">1</div>
+                <div className="images"><img src={Limg} alt="Langas Profile" /></div>
                 <div className="description">
-                  <h4>Winter</h4>
-                  <p>Winter has so much to offer - creative activities</p>
+                  <h4>Langa Madubela </h4>
+                  <p>Nonkululeko is a dedicated woman who fights for what she wants. Additionally, she is kind and loving to everybody.</p>
                 </div>
               </div>
             </label>
             <input type="radio" name="slide" id="c2" />
             <label htmlFor="c2" className="cardd">
               <div className="row">
+              <img src={chumIM} alt="Winter Image" />
                 <div className="icon">2</div>
                 <div className="description">
-                  <h4>Digital Technology</h4>
-                  <p>Gets better every day - stay tuned</p>
+                  <h4>Chuma Raxhothi</h4>
+                  <p>Nonkululeko Mzalwana has outstanding technical proficiency as well as problem-solving and communication capabilities. Her dedication to producing excellent work and meticulous attention to detail are genuinely admirable</p>
                 </div>
               </div>
             </label>
