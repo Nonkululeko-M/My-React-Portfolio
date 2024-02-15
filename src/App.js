@@ -6,9 +6,8 @@ import Home from './components/Home'; // Assuming you have a Home component
 import AboutSection from './components/AboutSection';
 import Skills from './components/skills';
 import Project from './components/Project';
-import Testimonial from './components/Testimonial';
 import Contact from './components/Contact';
-
+import Testimonials from './Testimonials';
 
 const App = () => {
   return (
@@ -18,7 +17,7 @@ const App = () => {
       <AboutSection />
       <Skills />
       <Project/>
-      <Testimonial/>
+      <Testimonials/>
       <Contact/>
     </div>
   );

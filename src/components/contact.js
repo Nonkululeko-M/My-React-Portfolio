@@ -16,7 +16,7 @@ const Contact = () => {
                         <a href="mailto: lucyanovidio@gmail.com" title="Enviar e-mail">
                           
 
-                          lucyanovidio@gmail.comhgjhjgkiiul
+                         
                         </a>
                       </li>
                       <li>
