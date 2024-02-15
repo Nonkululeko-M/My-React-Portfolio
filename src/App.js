@@ -7,6 +7,7 @@ import AboutSection from './components/AboutSection';
 import Skills from './components/skills';
 import Project from './components/Project';
 import Contact from './components/Contact';
+import Testiomonials from './components/Testimonials';
 
 
 const App = () => {
@@ -17,7 +18,9 @@ const App = () => {
       <AboutSection />
       <Skills />
       <Project/>
+      <Testiomonials/>
       <Contact/>
+      
     </div>
   );
 };
