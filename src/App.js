@@ -7,7 +7,7 @@ import AboutSection from './components/AboutSection';
 import Skills from './components/skills';
 import Project from './components/Project';
 import Contact from './components/Contact';
-import Testimonials from './Testimonials';
+
 
 const App = () => {
   return (
@@ -17,10 +17,9 @@ const App = () => {
       <AboutSection />
       <Skills />
       <Project/>
-      <Testimonials/>
       <Contact/>
     </div>
   );
-}
+};
 
 export default App;
