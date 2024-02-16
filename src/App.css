@@ -832,6 +832,7 @@ body.light-mode #home img#notebook-2-white {
   background-color: var(--secundary-color);
 }
 
+
 #contact .col-a {
   display: flex;
   flex-direction: column;
@@ -839,7 +840,6 @@ body.light-mode #home img#notebook-2-white {
 
   margin-bottom: 2rem;
 }
-
 #contact .col-a .content {
   display: flex;
   flex-direction: column;

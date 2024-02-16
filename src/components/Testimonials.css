@@ -1,3 +1,4 @@
+
 .myslide {
     box-sizing: border-box;
     margin: 0;
@@ -46,6 +47,7 @@
     color: white;
     display: flex;
     flex-wrap: nowrap;
+   
 }
 
 .cardd > .row > .icon {
@@ -100,4 +102,11 @@ input:checked + label .description {
     transform: translateY(0) !important;
 }
 
-
+#Testimonials {
+    text-align: center; /* Center align the testimonials section */
+  }
+  
+  .testimonial-content {
+    margin-top: 20px; /* Adjust the margin for spacing */
+  }
+  

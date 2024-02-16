@@ -46,7 +46,7 @@ const Skills = () => {
                   {[...Array(5)].map((_, index) => (
                     <span key={index} className={index < ratings.Java ? "gold" : "white"}>★</span>
                   ))}
-                </div>
+                </div> 
               )}
             </div>
             <div className="card" onMouseEnter={() => handleHover('CSS', 4)} onMouseLeave={() => resetRating('CSS')}>
