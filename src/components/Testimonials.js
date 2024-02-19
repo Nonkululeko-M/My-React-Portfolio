@@ -35,12 +35,8 @@ const Testimonials = () => {
               <img src={Limg} alt="profile" style={{ maxWidth: '50%', maxHeight: '50%' }} />
             </div>
           </div>
-          <div className="boxx">
-            
-            <div className="cardd">Yet another text
-              <img src={Limg} alt="profile" style={{ maxWidth: '50%', maxHeight: '50%' }} />
-            </div>
-          </div>
+         
+        
           </section>
         </section>
       </div>
