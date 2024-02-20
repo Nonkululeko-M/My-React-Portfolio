@@ -635,7 +635,7 @@ body.light-mode #home img#notebook-2-white {
   margin-bottom: 1.6rem;
 }
 
-#projects header p, #testimonils header p {
+#projects header p, #testonilims header p, #contact header p {
   max-width: 60rem;
   margin: 0 auto 3rem;
   text-align: center;
@@ -647,7 +647,7 @@ body.light-mode #home img#notebook-2-white {
   font-style: italic;
 }
 
-#projects header p + a, #testimonails p + a {
+#projects header p + a, #testimonails p + a  {
   padding: 0.8rem 2rem;
   color: var(--paragraph);
 
@@ -846,8 +846,9 @@ body.light-mode #home img#notebook-2-white {
   align-items: center;
 }
 
-#Contact header {
+.Contact header {
   margin-bottom: 3.2rem;
+  align-items: center;
 }
 
 #contact ul {
@@ -927,7 +928,16 @@ body.light-mode #home img#notebook-2-white {
 body.light-mode #contact .col-b::after {
   background-color: grey;
 }
+#contact .col-a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* This centers vertically */
+  align-items: center; /* This centers horizontally */
+}
 
+#contact .col-b {
+  text-align: center; /* This centers the text horizontally */
+}
 /*===== FOOTER ===============================================*/
 
 footer {
