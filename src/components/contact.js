@@ -49,7 +49,7 @@ const Contact = () => {
                     />
                   </div>
                   <div class="btn">
-                  <textarea placeholder="Message" rows="0" cols="1" id="message" name="message" class="textarea"></textarea>
+                  
                     <button class="button2"onclick="submitForm()">Submit</button>
                   </div>
                  

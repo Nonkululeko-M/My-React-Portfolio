@@ -1,0 +1,240 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+
+.section__card {
+    --primary-color: #149e9e;
+    --secondary-color: #e8e8e8;
+    --text-dark: #0f172a;
+    --text-light: #94a3b8;
+    --white: #ffffff;
+}
+
+
+
+.section__container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.section__container h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+.section__container h1 {
+  position: relative;
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+.section__container h1::after {
+  position: absolute;
+  content: "";
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  height: 2px;
+  width: 5rem;
+  background-color: var(--primary-color);
+}
+
+.section__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.section__card {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  padding: 5rem 2rem 2rem;
+  background-color: var(--white);
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+}
+
+.section__card::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
+  width: 75%;
+  aspect-ratio: 1;
+  border-radius: 100%;
+  background-color: var(--primary-color);
+  z-index: -1;
+  transition: 0.5s;
+}
+
+.section__card span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 1rem;
+  font-size: 3rem;
+  color: var(--white);
+}
+
+.section__card h4 {
+  margin-top: 4rem;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--primary-color);
+  transition: 0.3s;
+}
+
+.section__card p {
+  margin-bottom: 2rem;
+  color: var(--text-light);
+  transition: 0.3s;
+}
+
+.section__card img {
+  margin-bottom: 1rem;
+  max-width: 100px;
+  border-radius: 100%;
+  border: 2px solid var(--primary-color);
+  transition: 0.3s;
+}
+
+.section__card h5 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--primary-color);
+  transition: 0.3s;
+}
+
+.section__card h6 {
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--text-light);
+  transition: 0.3s;
+}
+
+.section__card:hover::before {
+  width: 400%;
+}
+
+.section__card:hover :is(h4, h5) {
+  color: var(--white);
+}
+
+.section__card:hover :is(p, h6) {
+  color: var(--secondary-color);
+}
+
+.section__card:hover img {
+  border-color: var(--white);
+}
+.section__card::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+    width: 75%;
+    aspect-ratio: 1;
+    border-radius: 100%;
+    background-color: var(--primary-color);
+    z-index: -1;
+    transition: 0.5s;
+  }
+  
+  .section__card span {
+    position: absolute;
+    top: 20px; /* Adjust the top position as needed */
+    left: 20px; /* Adjust the left position as needed */
+    padding: 1rem;
+    font-size: 3rem;
+    color: var(--white);
+  }
+  .section__card {
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+    padding: 6rem 3rem 3rem; /* Adjust the padding values to increase the size */
+    background-color: var(--white);
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+  }
+  
+  .section__card h4 {
+    margin-top: 6rem; /* Adjust the margin-top value to increase spacing */
+    margin-bottom: 1rem;
+    font-size: 2rem; /* Increase the font size for the heading */
+    font-weight: 600;
+    color: var(--primary-color);
+    transition: 0.3s;
+  }
+  
+  .section__card p {
+    margin-bottom: 3rem; /* Adjust the margin-bottom value to increase spacing */
+    font-size: 1.5rem; /* Increase the font size for the paragraph */
+    color: var(--text-light);
+    transition: 0.3s;
+  }
+  
+  .section__card img {
+    margin-bottom: 2rem; /* Adjust the margin-bottom value to increase spacing */
+    max-width: 150px; /* Increase the maximum width of the image */
+    border-radius: 100%;
+    border: 2px solid var(--primary-color);
+    transition: 0.3s;
+  }
+  
+  .section__card h5 {
+    font-size: 1.5rem; /* Increase the font size for the name */
+    font-weight: 600;
+    color: var(--primary-color);
+    transition: 0.3s;
+  }
+  
+  .section__card h6 {
+    font-size: 1.25rem; /* Increase the font size for the role */
+    font-weight: 400;
+    color: var(--text-light);
+    transition: 0.3s;
+  }
+/* Media query for mobile devices */
+@media screen and (max-width: 768px) {
+    .section__grid {
+      grid-template-columns: 1fr; /* Change grid layout to single column */
+    }
+  
+    .section__card {
+      padding: 1.5rem; /* Adjust padding for smaller screens */
+    }
+  
+    .section__card h4 {
+      margin-top: 1.5rem; /* Adjust margin for smaller screens */
+      font-size: 1.1rem; /* Adjust font size for smaller screens */
+    }
+  
+    .section__card p {
+      margin-bottom: 1rem; /* Adjust margin for smaller screens */
+      font-size: 0.8rem; /* Adjust font size for smaller screens */
+    }
+  
+    .section__card img {
+      max-width: 60px; /* Adjust max-width for smaller screens */
+    }
+  
+    .section__card h5 {
+      font-size: 0.9rem; /* Adjust font size for smaller screens */
+    }
+  
+    .section__card h6 {
+      font-size: 0.8rem; /* Adjust font size for smaller screens */
+    }
+  }
+  
