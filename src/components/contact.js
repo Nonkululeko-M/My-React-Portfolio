@@ -1,25 +1,33 @@
-import React from "react";
+import React, { useRef } from "react";
+import emailjs from 'emailjs-com';
+import ReCAPTCHA from "react-google-recaptcha"; // Import ReCAPTCHA component
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faUser, faComment } from '@fortawesome/free-solid-svg-icons'; // Import required icons
 import './contact.css';
 
 const Contact = () => {
-  const submitForm = (event) => {
+  const recaptchaRef = useRef(null); // Define recaptchaRef using useRef
+
+  const sendEmail = (event) => {
     event.preventDefault(); // Prevent the default form submission behavior
-    // Access form input values
-    const name = event.target.elements.name.value;
-    const email = event.target.elements.email.value;
-    const message = event.target.elements.message.value;
 
-    // You can perform validation here if needed
+    // Get the reCAPTCHA token value
+    const token = recaptchaRef.current.getValue();
 
-    // Log the form data
-    console.log("Name:", name);
-    console.log("Email:", email);
-    console.log("Message:", message);
+    // Check if the token is available
+    if (!token) {
+      alert("Please complete the reCAPTCHA challenge.");
+      return;
+    }
 
-    // Reset the form after submission if needed
-    event.target.reset();
+    emailjs.sendForm('service_sjcuoi3', 'template_pfp20wr', event.target, 'x-k10cI_DeGDcCRSf')
+      .then((result) => {
+        alert("Form successfully submitted:", result.text);
+        // Reset the form after successful submission if needed
+        event.target.reset();
+      }, (error) => {
+        alert(error.text);
+      });
   };
 
   return (
@@ -32,7 +40,7 @@ const Contact = () => {
             </header>
             <div className="card">
               <div className="card2">
-                <form className="form" onSubmit={submitForm}>
+                <form className="form" onSubmit={sendEmail}>
                   <p id="heading">Get in Touch</p>
                   <div className="field">
                     <FontAwesomeIcon icon={faUser} className="input-icon" />
@@ -41,7 +49,7 @@ const Contact = () => {
                       className="input-field"
                       placeholder="Name"
                       autoComplete="off"
-                      name="name" // Add name attribute for accessing input value
+                      name="Fullname" // Add name attribute for accessing input value
                     />
                   </div>
                   <div className="field">
@@ -63,9 +71,16 @@ const Contact = () => {
                       name="message" // Add name attribute for accessing input value
                     ></textarea>
                   </div>
-                  <div class="btn">
-                    <button type="submit" class="button2">Submit</button>
+                  <ReCAPTCHA
+                    ref={recaptchaRef}
+                    sitekey="6LcOuXopAAAAAEpd-QFlQ-ldWSZabncBdDDAv9y_"
+                   
+                    onChange={() => {}} // required prop, but can be empty function
+                  />
+                  <div className="btn"> {/* Update class to className */}
+                    <button type="submit" className="button2">Submit</button> {/* Update class to className */}
                   </div>
+                  
                 </form>
               </div>
             </div>

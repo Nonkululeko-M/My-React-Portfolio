@@ -1,7 +1,8 @@
 // Import necessary packages and icons
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFacebook, faWhatsapp, faGithub, faLinkedin, faPhone, faEnvelope } from '@fortawesome/free-brands-svg-icons';
+import { faFacebook, faWhatsapp, faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons'; // Import from free-solid-svg-icons
 import './Footer.css'; // Import your CSS file
 
 // Define the Footer component
