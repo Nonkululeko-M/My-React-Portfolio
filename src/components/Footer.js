@@ -13,10 +13,10 @@ const Footer = () => {
                 <div className="socialIcons">
                     <a href=""><FontAwesomeIcon icon={faFacebook} /></a>
                     <a href=""><FontAwesomeIcon icon={faWhatsapp} /></a>
-                    <a href=""><FontAwesomeIcon icon={faGithub} /></a>
-                    <a href=""><FontAwesomeIcon icon={faLinkedin} /></a>
-                    <a href=""><FontAwesomeIcon icon={faPhone} /></a>
-                    <a href=""><FontAwesomeIcon icon={faEnvelope} /></a>
+                    <a href="https://github.com/Nonkululeko-M?tab=repositories'"><FontAwesomeIcon icon={faGithub} /></a>
+                    <a href="https://www.linkedin.com/in/nonkululeko-mzalwana-1a8248271/"><FontAwesomeIcon icon={faLinkedin} /></a>
+                    <a href="tel:+270810547104"><FontAwesomeIcon icon={faPhone} /></a>
+                    <a href="'mailto:nonkukulekonancy@gmail.com'"><FontAwesomeIcon icon={faEnvelope} /></a>
                 </div>
                 <div className="footerBottom">
                     <p>Copyright © 2024 Nonkululeko Mzalwana, All rights Reserved.</p>
