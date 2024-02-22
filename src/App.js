@@ -30,3 +30,4 @@ const App = () => {
 };
 
 export default App;
+// Import the functions you need from the SDKs you need

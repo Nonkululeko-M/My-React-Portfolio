@@ -13,7 +13,8 @@ const Home = () => {
           </header>
           <div className="content">
             <p className="line typing">Software Developer</p>
-            <a className="button" href={CV} download>Download CV</a>
+            <a className="button" href={CV} download onClick={() => window.open(CV)}>Download CV</a>
+
 
           </div>
         </div>
@@ -24,21 +25,7 @@ const Home = () => {
             alt="Profile picture"
             id="notebook-1"
           />
-          <img
-            src={myprofile}
-            alt="My Picture"
-            id="notebook-2"
-          />
-          <img
-            src={myprofile}
-            alt="My Profile picture"
-            id="notebook-2-white"
-          />
-          <img
-            src={myprofile}
-            alt="my pic"
-            id="vidro"
-          />
+       
         </div>
       </div>
     </section>
