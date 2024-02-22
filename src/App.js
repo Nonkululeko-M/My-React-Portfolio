@@ -11,6 +11,7 @@ import Testiomonials from './components/Testimonials';
 import Footer from './components/Footer';
 
 
+
 const App = () => {
   return (
     <div>
@@ -22,6 +23,7 @@ const App = () => {
       <Testiomonials/>
       <Contact/>
       <Footer/>
+     
       
     </div>
   );

@@ -71,12 +71,15 @@ const Contact = () => {
                       name="message" // Add name attribute for accessing input value
                     ></textarea>
                   </div>
+                  <div className="recaptcha-container">
                   <ReCAPTCHA
                     ref={recaptchaRef}
                     sitekey="6LcOuXopAAAAAEpd-QFlQ-ldWSZabncBdDDAv9y_"
                    
                     onChange={() => {}} // required prop, but can be empty function
                   />
+               </div>
+            
                   <div className="btn"> {/* Update class to className */}
                     <button type="submit" className="button2">Submit</button> {/* Update class to className */}
                   </div>

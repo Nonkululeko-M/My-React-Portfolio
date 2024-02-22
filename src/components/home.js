@@ -1,5 +1,6 @@
 import React from 'react';
 import myprofile from '../images/IMG_7145.jpg'
+import CV from '../images/Nonkululeko.pdf'
 
 const Home = () => {
   return (
@@ -12,7 +13,7 @@ const Home = () => {
           </header>
           <div className="content">
             <p className="line typing">Software Developer</p>
-            <a className="button" href="/path/to/your/cv.pdf" download>Download CV</a>
+            <a className="button" href={CV} download>Download CV</a>
 
           </div>
         </div>

@@ -1,5 +1,7 @@
 import React from 'react';
-import myop from '../images/7162617.jpg'
+import myop from '../images/95705-big.jpg'
+import bank from '../images/banking.jpeg'
+import myportfolio from '../images/Screenshot 2024-02-22 110146.png'
 
 const Project = () => {
   return (
@@ -62,15 +64,15 @@ const Project = () => {
                   <p>HTML - CSS - JS</p>
                 </div>
                 <div className="card">
-                  <h3>Flappy Bird Game</h3>
+                  <h3>Banking App</h3>
                   <div className="img-wrapper">
                     <img
-                      src={myop}
-                      alt="My flappy brid game"
+                      src={bank}
+                      alt="Banking App"
                     />
                     <div className="buttons">
                       <a
-                        href="https://github.com/squad-30/OrangeEvolution-Squad30"
+                        href="https://github.com/Nonkululeko-M/Banking-With-GUI/tree/main/BankingAppWithGUI-main"
                         target="_blank"
                         rel="open project"
                         title="Github"
@@ -89,7 +91,7 @@ const Project = () => {
                 </svg>
                       </a>
                       <a
-                        href="https://orangeevolution-squad30.up.railway.app"
+                        href="https://github.com/Nonkululeko-M/Banking-With-GUI/tree/main/BankingAppWithGUI-main"
                         target="_blank"
                         rel="Reopen"
                         title="Live Demo"
@@ -109,18 +111,18 @@ const Project = () => {
                     </div>
                   </div>
             
-                  <p>HTML - CSS - JS - NodeJS</p>
+                  <p>HTML - CSS - JS - Python</p>
                 </div>
                 <div className="card">
                   <h3>Barkery Website</h3>
                   <div className="img-wrapper">
                     <img
-                      src={myop}
+                      src={myportfolio}
                       alt="Barkery"
                     />
                     <div className="buttons">
                       <a
-                        href="https://github.com/TheeDevs/New-Bakery"
+                        href="https://github.com/Nonkululeko-M/My-Portfolio/tree/main/recent"
                         target="_blank"
                         rel="open project"
                         title="Git Repo"
@@ -139,7 +141,7 @@ const Project = () => {
                 </svg>
                       </a>
                       <a
-                       href="https://ourbakerywebsite.netlify.app/"
+                       href="https://nonkululekom.netlify.app/"
                         target="_blank"
                         rel="Open Project"
                         title="Live Demo"

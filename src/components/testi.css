@@ -237,4 +237,35 @@
       font-size: 0.8rem; /* Adjust font size for smaller screens */
     }
   }
+  @media screen and (max-width: 1000px) {
+    .section__grid {
+      grid-template-columns: 1fr; /* Change grid layout to single column */
+    }
+  
+    .section__card {
+      padding: 1.5rem; /* Adjust padding for smaller screens */
+    }
+  
+    .section__card h4 {
+      margin-top: 1.5rem; /* Adjust margin for smaller screens */
+      font-size: 1.1rem; /* Adjust font size for smaller screens */
+    }
+  
+    .section__card p {
+      margin-bottom: 1rem; /* Adjust margin for smaller screens */
+      font-size: 0.8rem; /* Adjust font size for smaller screens */
+    }
+  
+    .section__card img {
+      max-width: 60px; /* Adjust max-width for smaller screens */
+    }
+  
+    .section__card h5 {
+      font-size: 0.9rem; /* Adjust font size for smaller screens */
+    }
+  
+    .section__card h6 {
+      font-size: 0.8rem; /* Adjust font size for smaller screens */
+    }
+  }
   
