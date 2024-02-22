@@ -1,5 +1,5 @@
 import React from 'react';
-import mYiMAGE from '../images/IMG_7145.jpg'
+import mY from '../images/IMG_7145.jpg'
 
 const AboutSection = () => {
   return (
@@ -22,7 +22,7 @@ I bring a unique blend of technical proficiency and a knack for problem-solving.
 
         <div className="col-b">
           <img
-            src={mYiMAGE}
+            src={mY}
             alt="Nonkululeko Mzalwana image"
           />
         </div>

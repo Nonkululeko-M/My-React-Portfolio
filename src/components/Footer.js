@@ -11,8 +11,8 @@ const Footer = () => {
         <footer>
             <div className="footerContainer">
                 <div className="socialIcons">
-                    <a href=""><FontAwesomeIcon icon={faFacebook} /></a>
-                    <a href=""><FontAwesomeIcon icon={faWhatsapp} /></a>
+                    <a href="https://www.facebook.com/nkulenana.shabalala/"><FontAwesomeIcon icon={faFacebook} /></a>
+                    <a href="https://wa.me/+270810547104"><FontAwesomeIcon icon={faWhatsapp} /></a>
                     <a href="https://github.com/Nonkululeko-M?tab=repositories'"><FontAwesomeIcon icon={faGithub} /></a>
                     <a href="https://www.linkedin.com/in/nonkululeko-mzalwana-1a8248271/"><FontAwesomeIcon icon={faLinkedin} /></a>
                     <a href="tel:+270810547104"><FontAwesomeIcon icon={faPhone} /></a>
