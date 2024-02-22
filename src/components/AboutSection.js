@@ -1,5 +1,8 @@
 import React from 'react';
 import mY from '../images/IMG_7145.jpg'
+import { BiAward, BiBriefcaseAlt } from 'react-icons/bi';
+import nkuleh from '../images/nkule.jpg'
+
 
 const AboutSection = () => {
   return (
@@ -15,7 +18,7 @@ const AboutSection = () => {
             <div className="about_box">
                 {/* Icon for experience */}
                
-                <i class="bx bx-award about_icon"></i>
+                <BiAward className="about_icon"size={30}  />
                 {/* Title for experience */}
                 <h3 className="about_title">Experience</h3>
                 {/* Subtitle for experience */}
@@ -26,7 +29,7 @@ const AboutSection = () => {
             {/* Box for completed projects */}
             <div className="about_box">
                 {/* Icon for completed projects */}
-                <i class="bx bx-briefcase-alt about_icon"></i>
+                <BiBriefcaseAlt className="about_icon" size={30} />
                 {/* Title for completed projects */}
                 <h3 className="about_title">Education</h3>
                 {/* Subtitle for completed projects */}
@@ -49,7 +52,7 @@ I bring a unique blend of technical proficiency and a knack for problem-solving.
 
         <div className="col-b">
           <img
-            src={mY}
+            src={nkuleh}
             alt="Nonkululeko Mzalwana image"
           />
         </div>

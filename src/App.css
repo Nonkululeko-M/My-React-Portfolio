@@ -1853,3 +1853,35 @@ footer .social-links li:nth-child(4) svg path:nth-child(2) {
     margin: 0; /* Remove any margin */
     padding: 0; /* Remove any padding */
 }
+.about_info.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Adjust the minimum and maximum width of each box */
+  gap: 20px; /* Gap between grid items */
+}
+
+.about_box {
+  text-align: center; /* Center-align content within each box */
+  padding: 20px; /* Add padding to the box content */
+  border: 2px solid #ccc; /* Add a border for visual separation (optional) */
+  border-radius: 10px; /* Add border radius for rounded corners (optional) */
+}
+
+.about_title {
+  margin-top: 10px; /* Add some space above the title */
+}
+
+.about_subtitle {
+  display: block; /* Ensure subtitle is displayed as a block element */
+  margin-top: 5px; /* Add some space above the subtitle */
+}
+
+@media screen and (max-width: 600px) { /* Adjust styles for screens up to 600px wide (typical mobile device width) */
+  .about_info.grid {
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Adjust the minimum and maximum width of each box for smaller screens */
+      gap: 10px; /* Reduce gap between grid items for smaller screens */
+  }
+
+  .about_box {
+      padding: 10px; /* Reduce padding for smaller screens */
+  }
+}

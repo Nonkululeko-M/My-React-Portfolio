@@ -268,4 +268,7 @@
       font-size: 0.8rem; /* Adjust font size for smaller screens */
     }
   }
-  
+  .larger-image {
+    width: 250px;
+    height: 220px;
+}
