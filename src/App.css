@@ -1905,3 +1905,11 @@ footer .social-links li:nth-child(4) svg path:nth-child(2) {
 
 
 }
+@media screen and (max-width: 600px) {
+  .about_box {
+    padding: 10px; /* Reduce padding for smaller screens */
+    gap: 10px;
+    width: 150px
+}
+;
+}
