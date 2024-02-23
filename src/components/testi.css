@@ -48,7 +48,10 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
 }
-
+.larger-image {
+  width: 210px;
+  height: 220px;
+}
 .section__card {
   position: relative;
   isolation: isolate;
@@ -225,10 +228,10 @@
       font-size: 0.8rem; /* Adjust font size for smaller screens */
     }
   
-    .section__card img {
+    .section__card img, .larger-image {
       max-width: 60px; /* Adjust max-width for smaller screens */
     }
-  
+   
     .section__card h5 {
       font-size: 0.9rem; /* Adjust font size for smaller screens */
     }
@@ -236,6 +239,9 @@
     .section__card h6 {
       font-size: 0.8rem; /* Adjust font size for smaller screens */
     }
+    .larger-image {
+      width: 100px; /* Adjust size as needed for smaller screens */
+      height: auto;
   }
   @media screen and (max-width: 1000px) {
     .section__grid {
@@ -259,7 +265,7 @@
     .section__card img {
       max-width: 60px; /* Adjust max-width for smaller screens */
     }
-  
+   
     .section__card h5 {
       font-size: 0.9rem; /* Adjust font size for smaller screens */
     }
@@ -269,6 +275,7 @@
     }
   }
   .larger-image {
-    width: 250px;
-    height: 220px;
+    width: 220px;
+    height: 100px;
+}
 }

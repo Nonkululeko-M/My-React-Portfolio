@@ -9,6 +9,7 @@ import Project from './components/Project';
 import Contact from './components/Contact';
 import Testiomonials from './components/Testimonials';
 import Footer from './components/Footer';
+import ToggleSwitch from './components/light';
 
 
 
@@ -23,6 +24,7 @@ const App = () => {
       <Testiomonials/>
       <Contact/>
       <Footer/>
+      <ToggleSwitch/>
      
       
     </div>
