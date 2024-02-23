@@ -507,8 +507,8 @@ body.menu-expanded button path {
     transform: translateY(2rem);
   }
 }
-
-#home .wrapper::before {
+/*my green circle
+/*#home .wrapper::before {
   content: "";
   display: block;
 
@@ -523,7 +523,7 @@ body.menu-expanded button path {
   z-index: -1;
 
   animation: appear 1s 500ms backwards;
-}
+}*/
 
 #home img {
   width: 30rem;
