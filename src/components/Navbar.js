@@ -43,6 +43,7 @@ const Navbar = () => {
       #knowledge .card,
       #contact,
       #contact header`
+      
      
     );
 

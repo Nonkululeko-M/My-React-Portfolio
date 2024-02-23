@@ -1887,15 +1887,14 @@ footer .social-links li:nth-child(4) svg path:nth-child(2) {
   .about_box {
       padding: 10px; /* Reduce padding for smaller screens */
   }
-}
 
-  #home {
+#home {
     padding-top:50px; /* Adjust as needed */
-   
-  }
+
+ }
   .col-a{
     padding-top: 70%;
-  } 
+  }
   .form{
     width:auto;
     height: auto;
@@ -1905,3 +1904,4 @@ footer .social-links li:nth-child(4) svg path:nth-child(2) {
 }
 
 
+}

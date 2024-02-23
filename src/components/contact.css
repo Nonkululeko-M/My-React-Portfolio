@@ -148,3 +148,22 @@
   }
   
 }
+.recaptcha-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1em; /* Add some margin to separate it from the submit button */
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+  /* Adjust the size of the reCAPTCHA container */
+  .recaptcha-container {
+    width: 100%; /* Set width to 100% to make it responsive */
+  }
+
+  /* Adjust the scale of the reCAPTCHA badge and iframe for mobile devices */
+  .grecaptcha-badge,
+  .grecaptcha-badge iframe {
+    transform: scale(0.6); /* Adjust the scale for mobile devices */
+  }
+}
