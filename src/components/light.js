@@ -1,10 +1,27 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const ToggleSwitch = () => {
+  // Use state to track the checked status of the checkbox
+  const [isChecked, setIsChecked] = useState(false);
+
+  // Function to handle checkbox change
+  const handleCheckboxChange = () => {
+    setIsChecked(!isChecked); // Toggle the checked status
+  };
+
   return (
     <div id="toggle">
-      <input type="checkbox" id="sw-checkbox" />
+      {/* Input element */}
+      <input 
+        type="checkbox" 
+        id="sw-checkbox" 
+        checked={isChecked} // Bind checked status to state
+        onChange={handleCheckboxChange} // Handle checkbox change
+      />
+
+      {/* Label element */}
       <label htmlFor="sw-checkbox" title="Mudar tema">
+        {/* First SVG icon */}
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 24 24"
@@ -16,6 +33,8 @@ const ToggleSwitch = () => {
             d="M11.38 2.019a7.5 7.5 0 1 0 10.6 10.6C21.662 17.854 17.316 22 12.001 22 6.477 22 2 17.523 2 12c0-5.315 4.146-9.661 9.38-9.981z"
           />
         </svg>
+
+        {/* Second SVG icon */}
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 24 24"

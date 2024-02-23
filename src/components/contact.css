@@ -139,3 +139,12 @@
   margin-bottom: 1em; /* Add some margin to separate it from the submit button */
 }
 
+
+@media screen and (max-width: 768px) {
+  /* Adjust the size of the reCAPTCHA for mobile devices */
+  .grecaptcha-badge,
+  .grecaptcha-badge iframe {
+    transform: scale(0.6); /* Adjust the scale for mobile devices */
+  }
+  
+}

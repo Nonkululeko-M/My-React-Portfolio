@@ -253,7 +253,9 @@ nav {
   height: var(--nav-height);
 
   display: flex;
-
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(1rem);
+  -webkit-backdrop-filter: blur(1rem);
   position: fixed;
   top: 0;
   z-index: 100;
@@ -1491,9 +1493,10 @@ footer .social-links li:nth-child(4) svg path:nth-child(2) {
   #home h1 {
     font-size: 3.8rem;
   }
-
+ 
   #home p {
     font-size: 1.6rem;
+  
   }
 
   @keyframes typing {
@@ -1885,3 +1888,20 @@ footer .social-links li:nth-child(4) svg path:nth-child(2) {
       padding: 10px; /* Reduce padding for smaller screens */
   }
 }
+
+  #home {
+    padding-top:50px; /* Adjust as needed */
+   
+  }
+  .col-a{
+    padding-top: 70%;
+  } 
+  .form{
+    width:auto;
+    height: auto;
+  }
+.social-links{
+  display: none;
+}
+
+
