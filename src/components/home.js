@@ -25,7 +25,11 @@ const Home = () => {
             alt="Profile picture"
             id="notebook-1"
           />
-       
+          <img
+          src={myprofile}
+          alt="Profile picture"
+          id= "notebook-2-white"
+          />
         </div>
       </div>
     </section>
