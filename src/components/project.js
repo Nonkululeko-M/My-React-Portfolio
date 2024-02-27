@@ -114,7 +114,7 @@ const Project = () => {
                   <p>HTML - CSS - JS - Python</p>
                 </div>
                 <div className="card">
-                  <h3>Barkery Website</h3>
+                  <h3>My Personal Portfolio</h3>
                   <div className="img-wrapper">
                     <img
                       src={myportfolio}
