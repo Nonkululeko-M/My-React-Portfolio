@@ -17,6 +17,18 @@ const Contact = () => {
   const sendEmail = async (event) => {
     event.preventDefault(); // Prevent the default form submission behavior
 
+    // Check if any of the fields are empty
+    if (!user.FullName || !user.email || !user.message) {
+      alert("Please fill in all the fields.");
+      return;
+    }
+
+    // Check if the FullName contains numbers
+    if (/\d/.test(user.FullName)) {
+      alert("Name should not contain numbers.");
+      return;
+    }
+
     // Get the reCAPTCHA token value
     const token = recaptchaRef.current.getValue();
 
